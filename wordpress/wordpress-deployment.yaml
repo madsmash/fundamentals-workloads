@@ -48,6 +48,8 @@ spec:
       - image: wordpress:6-apache
         name: wordpress
         env:
+        - name: WORDPRESS_DB_USER
+          value: root
         - name: WORDPRESS_DB_HOST
           value: wordpress-mysql
         - name: WORDPRESS_DB_PASSWORD
